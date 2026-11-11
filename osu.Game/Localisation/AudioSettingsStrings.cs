@@ -10,6 +10,56 @@ namespace osu.Game.Localisation
         private const string prefix = @"osu.Game.Resources.Localisation.AudioSettings";
 
         /// <summary>
+        /// "Native ASIO"
+        /// </summary>
+        public static LocalisableString AsioHeader => new TranslatableString(getKey(@"asio_header"), @"Native ASIO");
+
+        /// <summary>
+        /// "Use native ASIO output"
+        /// </summary>
+        public static LocalisableString UseAsio => new TranslatableString(getKey(@"use_asio"), @"Use native ASIO output");
+
+        /// <summary>
+        /// "Use your audio interface's ASIO driver for lower latency. Some drivers prevent other apps from using the interface. If audio crackles, increase the buffer size."
+        /// </summary>
+        public static LocalisableString UseAsioHint => new TranslatableString(getKey(@"use_asio_hint"), @"Use your audio interface's ASIO driver for lower latency. Some drivers prevent other apps from using the interface. If audio crackles, increase the buffer size.");
+
+        /// <summary>
+        /// "ASIO driver"
+        /// </summary>
+        public static LocalisableString AsioDriver => new TranslatableString(getKey(@"asio_driver"), @"ASIO driver");
+
+        /// <summary>
+        /// "ASIO sample rate (Hz)"
+        /// </summary>
+        public static LocalisableString AsioSampleRate => new TranslatableString(getKey(@"asio_sample_rate"), @"ASIO sample rate (Hz)");
+
+        /// <summary>
+        /// "ASIO buffer size (samples)"
+        /// </summary>
+        public static LocalisableString AsioBufferSize => new TranslatableString(getKey(@"asio_buffer_size"), @"ASIO buffer size (samples)");
+
+        /// <summary>
+        /// "Refresh drivers and retry ASIO"
+        /// </summary>
+        public static LocalisableString AsioRetry => new TranslatableString(getKey(@"asio_retry"), @"Refresh drivers and retry ASIO");
+
+        /// <summary>
+        /// "Retry"
+        /// </summary>
+        public static LocalisableString AsioRetryButton => new TranslatableString(getKey(@"asio_retry_button"), @"Retry");
+
+        /// <summary>
+        /// "First available ASIO driver"
+        /// </summary>
+        public static LocalisableString AsioFirstDriver => new TranslatableString(getKey(@"asio_first_driver"), @"First available ASIO driver");
+
+        /// <summary>
+        /// "Driver default"
+        /// </summary>
+        public static LocalisableString AsioDriverDefault => new TranslatableString(getKey(@"asio_driver_default"), @"Driver default");
+
+        /// <summary>
         /// "Audio"
         /// </summary>
         public static LocalisableString AudioSectionHeader => new TranslatableString(getKey(@"audio_section_header"), @"Audio");
